@@ -28,8 +28,6 @@ function Login() {
             console.log(error);
             alert("something went wrong")
         }
-
-        
     }
     return (
     <>

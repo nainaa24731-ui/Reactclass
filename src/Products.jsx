@@ -24,7 +24,8 @@ function Products({searchquery}) {
 
 
     useEffect(()=>{
-        fetch('https://ecomm-backend-wtzd.onrender.com/products')
+        //fetch('https://ecomm-backend-wtzd.onrender.com/products')
+        fetch('http://localhost:3000/products')
         .then(response => response.json())
         .then(data =>setproducts(data));
     },[])

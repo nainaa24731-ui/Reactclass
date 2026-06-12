@@ -7,10 +7,10 @@ function Signup() {
   const[role, setrole]=useState('')
   
   let onsubmit=async (event)=>{
-    let userdetails={
-      username,password,email,role
-    }
-    event.preventDefault();
+    event.preventDefault()
+
+    let userdetails={username,password,email,role}
+    
     let result=await fetch('http://localhost:3000/auth/register',{
       method:'POST',
       headers:{
